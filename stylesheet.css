@@ -87,6 +87,7 @@ nav > a > h4 {
   color: #fffaff;
   white-space: nowrap;
   font-size: 1.1rem;
+  z-index: 1;
 }
 nav > a:first-of-type {
   display: flex;
@@ -108,7 +109,12 @@ nav > a:first-of-type {
 #nav_links ul li {
   padding-left: 1.2rem;
 }
-#nav_links a {
+.burgermenu a {
+  color: white;
+  text-decoration: none;
+  opacity: 0.8;
+}
+#nav_links > ul a {
   color: white;
   text-decoration: none;
   font-size: 0.9rem;
@@ -421,7 +427,6 @@ footer {
     position: absolute;
     top: 0;
     right: 0;
-    display: block;
     width: 100%;
     height: 100vh;
     background-color: var(--color-primary1);
@@ -429,6 +434,8 @@ footer {
     display: flex;
     justify-content: center;
     padding-top: 8rem;
+    display: none;
+    position: fixed;
   }
   #nav_links .burgermenu ul {
     display: inline;
@@ -451,7 +458,9 @@ footer {
     display: block;
     grid-column: 1/-1;
   }
-
+  #contentText p {
+    max-width: 100vw;
+  }
   #contentImg {
     grid-column: 1/-1;
   }
@@ -489,13 +498,18 @@ footer {
     padding: 4rem 48px;
   }
   #conclusion {
-    padding: 6rem 0;
+    padding: 6rem 48px;
   }
 }
+
 /* --------------------JS Class--------------------------- */
 
 .bgmenuWidth {
   transform: translate(0vw, 0vw);
+  display: flex;
+}
+.nav_svg_fixed {
+  position: fixed;
 }
 
 /* ----------------------Animation------------------------------ */

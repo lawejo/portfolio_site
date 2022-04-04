@@ -15,7 +15,7 @@ html {
   --color-secondary: #6b7246;
   --color-secondary2: #0f0f0f;
 
-  --color-accent1: #c81404;
+  --color-accent1: #ff5e4f;
   --color-offwhite: #fffaff;
   /* ------------------------------------------------- */
   --font-displayfont: "Hepta Slab", serif;
@@ -106,7 +106,7 @@ nav > a:first-of-type {
 #nav_links ul li {
   padding-left: 1.2rem;
 }
-#nav_links a {
+#nav_links > ul a {
   color: white;
   text-decoration: none;
   font-size: 0.9rem;
@@ -121,6 +121,11 @@ nav svg {
 
 .burgermenu {
   display: none;
+}
+.burgermenu ul a {
+  color: white;
+  text-decoration: none;
+  opacity: 0.8;
 }
 /* ------------------Welcome------------------------- */
 main {

@@ -42,25 +42,33 @@ class Particle {
   // setting the co-ordinates, radius and the
   // speed of a particle in both the co-ordinates axes.
   constructor() {
-    this.x = random(0, width);
-    this.y = random(0, height);
-    this.r = random(1, 8);
+    this.r = random(1, 16);
+    this.x = random(0 + this.r, width - this.r);
+    this.y = random(0 + this.r, height - this.r);
     this.xSpeed = random(-2, 2);
     this.ySpeed = random(-1, 1.5);
-    console.log("particle");
+    //set color som streng
+    if (Math.random() > 0.2) {
+      this.color = "rgba(200,169,169,0.6)";
+    } else {
+      this.color = "rgba(6,34,64,1)";
+    }
+    //console.log("particle");
   }
 
   // creation of a particle.
   createParticle() {
     noStroke();
-    fill("rgba(200,169,169,0.5)");
+    //fill("rgba(200,169,169,0.5)");
+    //fill = color som streng fill(this.color)
+    fill(this.color);
     circle(this.x, this.y, this.r);
   }
 
   // setting the particle in motion.
   moveParticle() {
-    if (this.x < 0 || this.x > width) this.xSpeed *= -1;
-    if (this.y < 0 || this.y > height) this.ySpeed *= -1;
+    if (this.x < 0 + this.r || this.x > width - this.r) this.xSpeed *= -1;
+    if (this.y < 0 + this.r || this.y > height - this.r) this.ySpeed *= -1;
     this.x += this.xSpeed;
     this.y += this.ySpeed;
   }
@@ -88,7 +96,7 @@ function setup() {
     animationContainer.offsetWidth,
     animationContainer.offsetHeight
   );
-  for (let i = 0; i < width / 10; i++) {
+  for (let i = 0; i < width / 5; i++) {
     particles.push(new Particle());
   }
   canvas.parent("contentImg");

@@ -11,7 +11,7 @@ html {
 } /*18px*/
 :root {
   --color-primary1: #062240;
-  --color-primary2: #e6e6e6ed;
+  --color-primary2: #f1f1f1ed;
   --color-secondary: #6b7246;
   --color-secondary2: #0f0f0f;
 
@@ -78,7 +78,7 @@ nav {
   padding: 0 48px;
 }
 
-nav > a > h4 {
+nav > h4 {
   display: flex;
   align-items: center;
   width: 100%;
@@ -87,9 +87,11 @@ nav > a > h4 {
   font-size: 1.1rem;
   z-index: 1;
 }
-nav > a:first-of-type {
+nav > h4 > a:first-of-type {
   display: flex;
   align-items: center;
+  color: white;
+
   text-decoration: none;
 }
 #nav_links {
@@ -113,7 +115,8 @@ nav > a:first-of-type {
   font-size: 0.9rem;
   opacity: 0.8;
 }
-#nav_links a:hover {
+#nav_links a:hover,
+#footer_links > ul a:hover {
   color: #f41600;
 }
 nav svg {
@@ -133,7 +136,7 @@ nav svg {
 main {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 5rem 48px;
+  padding: 5rem 0 0 48px;
   background: linear-gradient(
     90deg,
     rgba(244, 251, 248, 1) 0%,
@@ -148,6 +151,7 @@ main {
   grid-column: 2;
   width: 100%;
   padding: 0 100px;
+  align-self: end;
 }
 
 figure,
@@ -227,7 +231,7 @@ h5 {
 
 /* --------------Footer-------------------------------------- */
 footer {
-  height: 150px;
+  height: 100px;
   width: 100%;
   background: var(--color-primary1);
   display: flex;
@@ -235,10 +239,19 @@ footer {
 }
 #footer_content {
   align-self: center;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 48px;
+  flex-direction: row-reverse;
 }
-#footer_links ul {
+#footer_links {
+  align-self: center;
+}
+#footer_links > ul {
   display: flex;
   list-style-type: none;
+  padding-bottom: 0.3rem;
 }
 #footer_links ul li {
   padding-right: 0.6rem;
@@ -249,10 +262,29 @@ footer {
 }
 #svgs {
   display: flex;
-  justify-content: center;
+  align-items: center;
   margin-bottom: 0.4rem;
 }
 #svgs svg {
   fill: var(--color-offwhite);
   padding-left: 0.6rem;
+}
+#footer_links svg {
+  fill: var(--color-offwhite);
+}
+#footer_links ul:last-of-type {
+  display: flex;
+  flex-direction: column;
+}
+#footer_links ul:last-of-type li {
+  display: flex;
+  color: var(--color-offwhite);
+}
+#footer_links ul:last-of-type li p:last-of-type {
+  padding-left: 1rem;
+  font-size: 0.8rem;
+  font-weight: 100;
+}
+#footer_links p {
+  margin: 0;
 }

@@ -42,7 +42,7 @@ class Particle {
   // setting the co-ordinates, radius and the
   // speed of a particle in both the co-ordinates axes.
   constructor() {
-    this.r = random(1, 16);
+    this.r = random(1, 8);
     this.x = random(0 + this.r, width - this.r);
     this.y = random(0 + this.r, height - this.r);
     this.xSpeed = random(-2, 2);

@@ -138,29 +138,26 @@ main {
 }
 #welcome {
   width: 100%;
-  height: 90vh;
   background-color: var(--color-primary2);
   grid-column: 1/-1;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding: 0 48px;
-}
-
-#welcome_content {
-  align-self: center;
-  grid-column: 1/3;
+  padding: 8rem 48px;
   color: var(--color-primary1);
 }
-
-#welcome_content p {
+#welcome h2 {
+  max-width: 15ch;
+  grid-column: 1/3;
+}
+#welcome p {
   max-width: 600px;
+  grid-column: 1/3;
 }
-
-#welcome_content a {
-  color: var(--color-accent1);
-  text-decoration: none;
+#welcome ul {
+  margin-left: 1rem;
+  grid-column: 1/3;
 }
-#welcome_content button {
+#welcome button {
   background-color: rgb(255, 255, 255, 0);
   border: none;
   font-size: 0.9rem;
@@ -168,18 +165,21 @@ main {
   transition: 0.1s;
   cursor: pointer;
 }
-#welcome_content button:hover {
-  transform: scale(1.09);
+#welcome a {
+  color: var(--color-accent1);
+  text-decoration: none;
+}
+#welcome button:hover {
+  transform: scale(1.05);
+  transform-origin: left;
 }
 
-#welcome_content h2 {
-  max-width: 15ch;
-}
 /* -------------------part-one--------------------------------- */
 #part_one {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   padding: 8rem 48px;
+  scroll-margin-top: -5rem;
 }
 #part_one h3 {
   grid-column: 1/13;
@@ -220,6 +220,7 @@ main {
   grid-template-columns: repeat(12, 1fr);
   padding: 8rem 48px;
   background-color: var(--color-primary2);
+  scroll-margin-top: -5rem;
 }
 #part_two h4 {
   grid-column: 7/13;
@@ -238,6 +239,7 @@ main {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   padding: 8rem 48px;
+  scroll-margin-top: -5rem;
 }
 #part_three h4 {
   grid-column: 1/7;
@@ -385,7 +387,42 @@ footer {
     padding-top: 5rem;
   }
 }
+@media (max-width: 500px) {
+  #welcome h2 {
+    grid-column: 1/-1;
+  }
+  #welcome p {
+    grid-column: 1/-1;
+  }
+  #welcome button p {
+    text-align: left;
+  }
+  #part_three h4 {
+    grid-column: 1/-1;
+  }
+  #part_three_text {
+    grid-column: 1/-1;
+    grid-row: 2;
+  }
+  #part_three_graphics {
+    grid-row: 3;
+    grid-column: 1/-1;
+    display: flex;
+    width: 100%;
+  }
+  #part_three_graphics img {
+    width: 100%;
+  }
 
+  #part_three_second_text {
+    grid-row: 4;
+    grid-column: 1/-1;
+  }
+  #part_three_second_graphic {
+    grid-row: 5;
+    grid-column: 1/-1;
+  }
+}
 /* --------------------JS Class--------------------------- */
 
 .bgmenuWidth {

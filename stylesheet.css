@@ -228,6 +228,9 @@ button {
 #project_text h3 {
   line-height: 2.4rem;
 }
+#project_text h5 {
+  margin-top: 1rem;
+}
 #project_text > p:first-of-type {
   margin: 0;
   font-style: italic;

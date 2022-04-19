@@ -32,6 +32,7 @@ body {
 p {
   margin-bottom: 1rem;
   color: var(--color-primary1);
+  margin-top: 0.5rem;
 }
 
 h1,
@@ -172,12 +173,14 @@ main {
 #contentImg {
   width: 100%;
   height: 60%;
-  grid-column: 7/11;
+  grid-column: 5/11;
   align-self: center;
   z-index: 1;
   grid-row: 1;
 }
-
+button {
+  cursor: pointer;
+}
 /* --------------PROJECT ONE-------------------------------------- */
 #project_one {
   display: grid;

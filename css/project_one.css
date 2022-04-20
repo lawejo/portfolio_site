@@ -185,6 +185,7 @@ main {
 #hacked_hodwarts_codepen {
   grid-column: 3/-1;
   grid-row: 1/5;
+  padding-left: 6rem;
 }
 #hacked_hodwarts_codepen p {
   margin-top: 1rem;

@@ -265,37 +265,6 @@ main {
   grid-row: 3;
   margin-top: 1.5rem;
 }
-/* -------------------part_three--------------------------------- */
-#part_three {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  padding: 8rem 48px;
-  scroll-margin-top: -5rem;
-}
-#part_three h4 {
-  grid-column: 1/7;
-  margin-bottom: 1rem;
-  grid-row: 1;
-}
-#part_three_text {
-  grid-column: 1/6;
-  grid-row: 2;
-}
-#part_three_graphics {
-  grid-column: 7/13;
-  grid-row: 2;
-}
-#part_three_second_text {
-  grid-column: 7/13;
-  margin-top: 2rem;
-  grid-row: 3;
-}
-#part_three_second_graphic {
-  grid-column: 1/6;
-  margin-top: 2rem;
-  grid-row: 3;
-}
 /* --------------Footer-------------------------------------- */
 footer {
   height: 100px;

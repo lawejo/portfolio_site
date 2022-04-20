@@ -39,28 +39,41 @@
   <main>
     <section id="welcome">
       <h2>Creating an online presence for a start-up</h2>
-      <article>    <p>
-        In this assignment my group and I worked with a jewellry start-up called Ivaldesmykker - they had an existing homemade wordpress site, an empty instagram account and a facebook page that had just been initiated. There was no clear coherency in the way Ivaldesmykker expressed themselves online. So our task was to develop a Style & SoMe guide, a video(s) to be used in a fashion that would help this particular start-up promote themselves or their products. Finally we had to develop a new website and this is the part I played a role in.</p>
-      <p>
-      Due to me being the one coding the website in this assignment that is the focus I will have when taking you through this project. A bunch of code. If you want to check out specific fucntionalities that I've highlighted underneath here, click on the links to jump to those parts.
-      <ul>
-        <li> -<a href="#part_one"> Coding mobile first</a></li>
-        <li> -<a href="#part_two"> Dynamic data, fetching from a database</a></li>
-          <li> -<a href="#part_three"> CSS Variables</a></li></ul>
-      </p></article>
-  
-   
+      <article>
+        <p>
+          In this assignment my group and I worked with a jewellry start-up called Ivaldesmykker - they had an existing
+          homemade wordpress site, an empty instagram account and a facebook page that had just been initiated. There
+          was no clear coherency in the way Ivaldesmykker expressed themselves online. So our task was to develop a
+          Style & SoMe guide, a video(s) to be used in a fashion that would help this particular start-up promote
+          themselves or their products. Finally we had to develop a new website and this is the part I played a role in.
+        </p>
+        <p>
+          Due to me being the one coding the website in this assignment that is the focus I will have when taking you
+          through this project. A bunch of code. If you want to check out specific fucntionalities that I've highlighted
+          underneath here, click on the links to jump to those parts.
+          <ul>
+            <li> -<a href="#part_one"> Coding mobile first</a></li>
+            <li> -<a href="#part_two"> Dynamic data, fetching from a database</a></li>
+            <li> -<a href="#part_three"> CSS Variables</a></li>
+          </ul>
+        </p>
+      </article>
+
+
       </li>
 
       </ul>
 
       <div id="ivaldesmykker_graphics">
-     <video autoplay muted loop> <source src="../assets/Ivalde_website_desktop.mp4" type="video/mp4"></video>
-     
-       <article id="ivaldesmykker_graphics_links">   <p> Link to the endresult   <a href="https://www.latoso.dk/kea/2semester/ivaldesmykker/" target="_blank">
-        <button>https://www.latoso.dk/kea/2semester/ivaldesmykker/</button></a></p>
-        <p>Link to the Github repository<a href="https://github.com/axtecho/ivaldesmykker" target="_blank">
-          <button>https://github.com/axtecho/ivaldesmykker</button></a></p></article>
+        <video autoplay muted loop>
+          <source src="../assets/Ivalde_website_desktop.mp4" type="video/mp4"></video>
+
+        <article id="ivaldesmykker_graphics_links">
+          <p> Link to the endresult <a href="https://www.latoso.dk/kea/2semester/ivaldesmykker/" target="_blank">
+              <button>https://www.latoso.dk/kea/2semester/ivaldesmykker/</button></a></p>
+          <p>Link to the Github repository<a href="https://github.com/axtecho/ivaldesmykker" target="_blank">
+              <button>https://github.com/axtecho/ivaldesmykker</button></a></p>
+        </article>
 
       </div>
     </section>
@@ -69,75 +82,67 @@
       <article id="part_one_text">
 
         <p>
-          One of the requirements of this assignment was to code the website with the mobile-first approach and this entails using media queries with a min-width, since they are active with a screen of that has a certain minimum width, opposite of the max-width media-queries. On the right is a codepen of the media-queries used in this project.  
+          One of the requirements of this assignment was to code the website with the mobile-first approach and this
+          entails using media queries with a min-width, since they are active with a screen of that has a certain
+          minimum width, opposite of the max-width media-queries. On the right is a codepen of the media-queries used in
+          this project.
         </p>
-<p>Some of the advantages of the mobile-first approach is that a majority of users will visit your site on their phone and therefore you can argue that it makes sense to start your design and code there. Another advantage is that the page is loaded with much simpler code and the advanced styling will be added when needed through the media-queries. </p>
-      </article> 
+        <p>Some of the advantages of the mobile-first approach is that a majority of users will visit your site on their
+          phone and therefore you can argue that it makes sense to start your design and code there. Another advantage
+          is that the page is loaded with much simpler code and the advanced styling will be added when needed through
+          the media-queries. </p>
+      </article>
       <article id="part_one_graphic">
 
-        <p class="codepen" data-height="300" data-default-tab="js" data-slug-hash="LYeqgvE" data-user="axtecho" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+        <p class="codepen" data-height="300" data-default-tab="js" data-slug-hash="LYeqgvE" data-user="axtecho"
+          style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
           <span>See the Pen <a href="https://codepen.io/axtecho/pen/LYeqgvE">
-          Media queries</a> by axtecho (<a href="https://codepen.io/axtecho">@axtecho</a>)
-          on <a href="https://codepen.io">CodePen</a>.</span>
+              Media queries</a> by axtecho (<a href="https://codepen.io/axtecho">@axtecho</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
         </p>
         <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
       </article>
-     
+
     </section>
     <section id="part_two">
       <h4>Dynamic data, fetching from a database</h4>
       <div id="part_two_text">
-        <p>This is the semester we were introduced to fetching data and creating a website that is populated with dynamic data. In the codepen on the right is an example of the code I used to fetch JSON-data from our RESTAPI and in the end an array of objects is sent to the function "handelData". </p>
+        <p>This is the semester we were introduced to fetching data and creating a website that is populated with
+          dynamic data. In the codepen on the right is an example of the code I used to fetch JSON-data from our RESTAPI
+          and in the end an array of objects is sent to the function "handelData". </p>
       </div>
 
       <div id="part_two_graphics">
         <figure class="openImg">
-          <p class="codepen" data-height="300" data-default-tab="js" data-slug-hash="dyJaQKW" data-user="axtecho" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+          <p class="codepen" data-height="300" data-default-tab="js" data-slug-hash="dyJaQKW" data-user="axtecho"
+            style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
             <span>See the Pen <a href="https://codepen.io/axtecho/pen/dyJaQKW">
-            Fetching data</a> by axtecho (<a href="https://codepen.io/axtecho">@axtecho</a>)
-            on <a href="https://codepen.io">CodePen</a>.</span>
+                Fetching data</a> by axtecho (<a href="https://codepen.io/axtecho">@axtecho</a>)
+              on <a href="https://codepen.io">CodePen</a>.</span>
           </p>
           <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
         </figure>
       </div>
-<div id="part_two_second_text"><p>In the codepen on the right</p></div>
-<div id="part_two_second_graphics"><p class="codepen" data-height="300" data-default-tab="js" data-slug-hash="GRyzwwd" data-user="axtecho" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/axtecho/pen/GRyzwwd">
-  Dynamic data</a> by axtecho (<a href="https://codepen.io/axtecho">@axtecho</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script></div>
+      <div id="part_two_second_text">
+        <p>In the codepen on the left we have the two functions that take care of the received JSOn data, that comes in
+          an array of objects. The first one called handleData serves to take array and then with the array method
+          .forEach I loop through each object and what happens to each on is what we see in the function called
+          singlePiece. In in I copy a template from my DOM, I copy it with the cloneNode(true) which also copies its
+          whole subtree. Then the template is populated with information derived from the object and in the end its
+          appended to an empty parentnode. </p>
       </div>
-    </section>
-    <section id="part_three">
-      <h4>Comparing JSON data containing family names to determine "bloodstatus"</h4>
-      <div id="part_three_text">
-        <p>A requirement of the assignment was to be able to determine a students "bloodstatus" and to solve this I had
-          to deal with fetching two different JSON files. One that I showed a snippet from at the top of the page that
-          delivered the students full name and house and then this second one that has two arrays dividing students in
-          to "Pure-blood" or "Half-blood" by their last name</p>
-      </div>
-      <div id="part_three_graphics"><img src="../assets/families_half_blood.png" alt="">
-        <img src="../assets/families_fulll_blood.png" alt=""></div>
-      <div id="part_three_second_text">
-        <p>After fetching the second JSON file I created an object with two empty arrays inside called "half" & "pure"
-          and pushed the students into these arrays accordingly. To the left you can see how my function looks. Its a
-          function with another function nested inside.</p>
-        <p>In my first if-statement there is three possible outcomes that can be returned as we can see "half", "full"
-          or "muggle". What is returned is determined in the nested function that compares an array (which is part of
-          the second JSON file turned into an array) and then the last name of the given student. If the student is no
-          where to be found in either one they are returned as a muggle.</p>
-      </div>
-      <div id="part_three_second_graphic">
-        <p class="codepen" data-height="300" data-default-tab="js" data-slug-hash="XWVOrPQ" data-user="axtecho"
+      <div id="part_two_second_graphics">
+        <p class="codepen" data-height="300" data-default-tab="js" data-slug-hash="GRyzwwd" data-user="axtecho"
           style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-          <span>See the Pen <a href="https://codepen.io/axtecho/pen/XWVOrPQ">
-              Untitled</a> by axtecho (<a href="https://codepen.io/axtecho">@axtecho</a>)
+          <span>See the Pen <a href="https://codepen.io/axtecho/pen/GRyzwwd">
+              Dynamic data</a> by axtecho (<a href="https://codepen.io/axtecho">@axtecho</a>)
             on <a href="https://codepen.io">CodePen</a>.</span>
         </p>
         <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
       </div>
+      </div>
     </section>
+   
     <footer>
       <div id="footer_content">
         <div id="svgs">

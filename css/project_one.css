@@ -296,12 +296,12 @@ main {
   grid-row: 2;
 }
 #part_three_second_text {
-  grid-column: 7/13;
+  grid-column: 1/6;
   margin-top: 2rem;
   grid-row: 3;
 }
 #part_three_second_graphic {
-  grid-column: 1/6;
+  grid-column: 7/13;
   margin-top: 2rem;
   grid-row: 3;
 }
@@ -375,20 +375,20 @@ footer {
     align-self: center;
     fill: var(--color-offwhite);
     cursor: pointer;
-    z-index: 1;
+    z-index: 2;
+    height: 25px;
   }
   .burgermenu {
-    position: absolute;
     top: 0;
     right: 0;
-    display: block;
     width: 100%;
     height: 100vh;
     background-color: var(--color-primary1);
     transform: translate(150vw, 0);
-    display: flex;
     justify-content: center;
     padding-top: 8rem;
+    display: none;
+    position: fixed;
   }
   #nav_links .burgermenu ul {
     display: inline;
@@ -426,6 +426,24 @@ footer {
     display: flex;
     flex-direction: column;
     padding-top: 5rem;
+  }
+  #breadcrumbs {
+    padding: 0.5rem 24px 0 24px;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  #welcome {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+  #welcome h2,
+  #welcome article {
+    padding: 0 48px;
+  }
+  #hacked_hodwarts_codepen {
+    padding: 0;
   }
 }
 @media (max-width: 500px) {
@@ -468,4 +486,23 @@ footer {
 
 .bgmenuWidth {
   transform: translate(0vw, 0vw);
+  display: flex;
+  z-index: 1;
+}
+
+/* --------------------Burgermenu animation------------------ */
+
+.lineOne {
+  transform: rotate(35deg) translate(-4px, 38.5px);
+  transform-origin: center center;
+  transition: 0.5s;
+}
+.lineTwo {
+  transform: translateX(-50px);
+  opacity: 0;
+}
+.lineThree {
+  transform: rotate(-35deg) translate(-5px, -28px);
+  transform-origin: center center;
+  transition: 0.5s;
 }

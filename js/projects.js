@@ -1,5 +1,5 @@
 "use strict";
-
+window.addEventListener("load", start);
 /* ---------------Nav / Burgermenu----------------------- */
 document.querySelector("nav svg").addEventListener("click", slideOutMenu);
 document.querySelector(".burgermenu li").addEventListener("click", closemenu);
@@ -14,10 +14,10 @@ function closemenu() {
 function slideOutMenu() {
   document.querySelector(".burgermenu").classList.toggle("bgmenuWidth");
   document.querySelector("nav svg").classList.toggle("nav_svg_fixed");
-}
-const mediaSize = window.matchMedia("(max-width: 556px)");
-if (mediaSize.matches) {
-  document.querySelector("nav h4").textContent = "LWJ";
+  document.querySelector(".one").classList.toggle("lineOne");
+  document.querySelector(".two").classList.toggle("lineTwo");
+  document.querySelector(".three").classList.toggle("lineThree");
+  document.querySelector("main").classList.toggle("remove_display");
 }
 
 /* ---------------UI Cards----------------------- */
@@ -37,80 +37,6 @@ function animatePlus3() {
     .classList.toggle("display_desc");
 }
 
-// this class describes the properties of a single particle.
-class Particle {
-  // setting the co-ordinates, radius and the
-  // speed of a particle in both the co-ordinates axes.
-  constructor() {
-    this.r = random(1, 8);
-    this.x = random(0 + this.r, width - this.r);
-    this.y = random(0 + this.r, height - this.r);
-    this.xSpeed = random(-2, 2);
-    this.ySpeed = random(-1, 1.5);
-    //set color som streng
-    if (Math.random() > 0.2) {
-      this.color = "rgba(200,169,169,0.6)";
-    } else {
-      this.color = "rgba(6,34,64,1)";
-    }
-    //console.log("particle");
-  }
-
-  // creation of a particle.
-  createParticle() {
-    noStroke();
-    //fill("rgba(200,169,169,0.5)");
-    //fill = color som streng fill(this.color)
-    fill(this.color);
-    circle(this.x, this.y, this.r);
-  }
-
-  // setting the particle in motion.
-  moveParticle() {
-    if (this.x < 0 + this.r || this.x > width - this.r) this.xSpeed *= -1;
-    if (this.y < 0 + this.r || this.y > height - this.r) this.ySpeed *= -1;
-    this.x += this.xSpeed;
-    this.y += this.ySpeed;
-  }
-
-  // this function creates the connections(lines)
-  // between particles which are less than a certain distance apart
-  joinParticles(particles) {
-    particles.forEach((element) => {
-      let dis = dist(this.x, this.y, element.x, element.y);
-      if (dis < 85) {
-        stroke("rgba(255,255,255,0.04)");
-        line(this.x, this.y, element.x, element.y);
-      }
-    });
-  }
-}
-
-// an array to add multiple particles
-let particles = [];
-
-function setup() {
-  const animationContainer = document.querySelector("#contentImg");
-  /* console.log(animationContainer.offsetHeight); */
-  const canvas = createCanvas(
-    animationContainer.offsetWidth,
-    animationContainer.offsetHeight
-  );
-  for (let i = 0; i < width / 5; i++) {
-    particles.push(new Particle());
-  }
-  canvas.parent("contentImg");
-}
-
-function draw() {
-  background("#0f0f0f");
-  for (let i = 0; i < particles.length; i++) {
-    particles[i].createParticle();
-    particles[i].moveParticle();
-    particles[i].joinParticles(particles.slice(i));
-  }
-}
-
 /* ---------------Animation------------------------ */
 const properties = {
   duration: 1750,
@@ -118,25 +44,37 @@ const properties = {
   direction: "alternate",
   easing: "ease-in-out",
 };
-const keyframes = [
-  {
-    transform: "translate(0,0)",
-  },
-  {
-    transform: "translate(0,-3vw)",
-  },
-];
-
-const arrow = document.querySelector("#scroll_indicator");
-const animation = arrow.animate(keyframes, properties);
-
-const properties1 = {
+const properties2 = {
   duration: 1750,
   iterations: Infinity,
   direction: "alternate",
   easing: "ease-in-out",
 };
-const keyframes1 = [
+const properties3 = {
+  duration: 1750,
+  iterations: Infinity,
+  direction: "alternate",
+  easing: "ease-in-out",
+};
+
+const keyframes = [
+  {
+    transform: "translate(0,0)",
+  },
+  {
+    transform: "translate(0,3vw)",
+  },
+];
+
+const keyframes2 = [
+  {
+    transform: "translate(0,0)",
+  },
+  {
+    transform: "translate(0,3vw)",
+  },
+];
+const keyframes3 = [
   {
     transform: "translate(0,0)",
   },
@@ -145,5 +83,24 @@ const keyframes1 = [
   },
 ];
 
-const arrow1 = document.querySelector("#backtothetop a");
-const animation1 = arrow1.animate(keyframes1, properties1);
+function start() {
+  const arrow1 = document.querySelector("#scroll_indicator");
+  const animation1 = arrow1.animate(keyframes, properties);
+  //-----------------------------
+
+  const arrow2 = document.querySelector("#scroll_indicator_p2");
+  const animation2 = arrow2.animate(keyframes2, properties2);
+  //-----------------------------------
+
+  const arrow3 = document.querySelector("#backtothetop a");
+  const animation3 = arrow3.animate(keyframes3, properties3);
+}
+
+/* ------------------------Mediaquery-------------------------------- */
+const mediaSize = window.matchMedia("(max-width: 784px)");
+if (mediaSize.matches) {
+  properties.duration = 850;
+  properties2.duration = 850;
+  properties3.duration = 850;
+  start();
+}

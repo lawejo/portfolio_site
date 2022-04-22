@@ -168,67 +168,6 @@ h5 {
   max-width: 40vw;
 }
 
-@media (max-width: 784px) {
-  #nav_links ul {
-    display: none;
-  }
-  nav svg {
-    display: inline;
-    align-self: center;
-    fill: var(--color-offwhite);
-    cursor: pointer;
-    z-index: 2;
-  }
-  .burgermenu {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: var(--color-primary1);
-    transform: translate(150vw, 0);
-    display: flex;
-    justify-content: center;
-    padding-top: 8rem;
-    display: none;
-    position: fixed;
-  }
-  #nav_links .burgermenu ul {
-    display: inline;
-  }
-  #nav_links .burgermenu ul li {
-    font-size: 3.157rem;
-    margin-top: 1rem;
-  }
-  main {
-    display: flex;
-    flex-direction: column-reverse;
-    background: linear-gradient(
-      0deg,
-      rgba(255, 255, 255, 1) 0%,
-      rgba(255, 255, 255, 1) 66%,
-      rgba(210, 225, 218, 1) 85%,
-      rgba(210, 225, 218, 1) 100%
-    );
-  }
-  #aboutme_text {
-    max-width: max-content;
-  }
-  #aboutme_graphic {
-    padding: 0;
-  }
-}
-/* --------------------JS Class--------------------------- */
-
-.bgmenuWidth {
-  transform: translate(0vw, 0vw);
-  display: flex;
-  z-index: 1;
-}
-.nav_svg_fixed {
-  position: fixed;
-}
-
 /* --------------Footer-------------------------------------- */
 footer {
   height: 100px;
@@ -287,4 +226,106 @@ footer {
 }
 #footer_links p {
   margin: 0;
+}
+/* -------------------Media-queries-------------------- */
+@media (max-width: 784px) {
+  #nav_links ul {
+    display: none;
+  }
+  nav svg {
+    display: inline;
+    align-self: center;
+    fill: var(--color-offwhite);
+    cursor: pointer;
+    z-index: 2;
+    height: 25px;
+  }
+
+  .burgermenu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-primary1);
+    transform: translate(150vw, 0);
+    display: flex;
+    justify-content: center;
+    padding-top: 8rem;
+    display: none;
+    position: fixed;
+  }
+  #nav_links .burgermenu ul {
+    display: inline;
+  }
+  #nav_links .burgermenu ul li {
+    font-size: 3.157rem;
+    margin-top: 1rem;
+  }
+  main {
+    display: flex;
+    flex-direction: column-reverse;
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 1) 66%,
+      rgba(210, 225, 218, 1) 85%,
+      rgba(210, 225, 218, 1) 100%
+    );
+  }
+  #aboutme_text {
+    max-width: max-content;
+  }
+  #aboutme_graphic {
+    padding: 0;
+  }
+  #aboutme_text h2 {
+    font-size: 2.157rem;
+  }
+  #aboutme_text h5 {
+    font-size: 1rem;
+  }
+  main {
+    padding: 5rem 24px;
+  }
+  #footer_content {
+    padding: 0 24px;
+  }
+  #svgs {
+    flex-direction: column;
+  }
+  #nav_links ul li {
+    padding: 0;
+  }
+}
+/* --------------------JS Class--------------------------- */
+
+.bgmenuWidth {
+  transform: translate(0vw, 0vw);
+  display: flex;
+  z-index: 1;
+}
+.nav_svg_fixed {
+  position: fixed;
+}
+.remove_display {
+  display: none;
+}
+
+/* --------------------Burgermenu animation------------------ */
+
+.lineOne {
+  transform: rotate(35deg) translate(-4px, 38.5px);
+  transform-origin: center center;
+  transition: 0.5s;
+}
+.lineTwo {
+  transform: translateX(-50px);
+  opacity: 0;
+}
+.lineThree {
+  /* transform: rotate(-45deg) translate(-11px, -26px); */
+  transform: rotate(-35deg) translate(-5px, -28px);
+  transform-origin: center center;
+  transition: 0.5s;
 }

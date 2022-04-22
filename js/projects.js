@@ -110,3 +110,40 @@ function draw() {
     particles[i].joinParticles(particles.slice(i));
   }
 }
+
+/* ---------------Animation------------------------ */
+const properties = {
+  duration: 1750,
+  iterations: Infinity,
+  direction: "alternate",
+  easing: "ease-in-out",
+};
+const keyframes = [
+  {
+    transform: "translate(0,0)",
+  },
+  {
+    transform: "translate(0,-3vw)",
+  },
+];
+
+const arrow = document.querySelector("#scroll_indicator");
+const animation = arrow.animate(keyframes, properties);
+
+const properties1 = {
+  duration: 1750,
+  iterations: Infinity,
+  direction: "alternate",
+  easing: "ease-in-out",
+};
+const keyframes1 = [
+  {
+    transform: "translate(0,0)",
+  },
+  {
+    transform: "translate(0,-3vw)",
+  },
+];
+
+const arrow1 = document.querySelector("#backtothetop a");
+const animation1 = arrow1.animate(keyframes1, properties1);

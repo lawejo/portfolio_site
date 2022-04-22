@@ -132,6 +132,30 @@ nav svg {
   opacity: 0.8;
 }
 /* ------------------Welcome------------------------- */
+
+#breadcrumbs {
+  background-color: var(--color-primary2);
+  padding: 1rem 48px 0 48px;
+  text-decoration: none;
+}
+#breadcrumbs ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+#breadcrumbs li {
+  padding-left: 0.5rem;
+}
+#breadcrumbs a {
+  color: var(--color-secondary2);
+  text-decoration: none;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+#breadcrumbs a:hover {
+  color: #f41600;
+}
 main {
   display: grid;
   grid-template-columns: 1fr;
@@ -191,6 +215,7 @@ main {
 }
 #ivaldesmykker_graphics video {
   width: 100%;
+  border-radius: 12px;
 }
 #ivaldesmykker_graphics p {
   margin-top: 1rem;

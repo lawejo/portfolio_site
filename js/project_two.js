@@ -19,3 +19,14 @@ function slideOutMenu() {
   document.querySelector(".three").classList.toggle("lineThree");
   document.querySelector("main").classList.toggle("remove_display");
 }
+
+const mediaSize = window.matchMedia("(max-width: 784px)");
+let mobileFirstSpan = document.querySelector("#mobile_first_span");
+let dynamicSpan = document.querySelector("#dynamic_span");
+let fetchSpan = document.querySelector("#fetch_span");
+
+if (mediaSize.matches) {
+  mobileFirstSpan.textContent = "Underneath here";
+  dynamicSpan.textContent = "underneath here";
+  fetchSpan.textContent = "underneath here";
+}

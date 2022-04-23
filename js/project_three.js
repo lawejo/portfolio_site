@@ -19,3 +19,12 @@ function slideOutMenu() {
   document.querySelector(".three").classList.toggle("lineThree");
   document.querySelector("main").classList.toggle("remove_display");
 }
+
+const mediaSize = window.matchMedia("(max-width: 784px)");
+let animationSpan = document.querySelector("#animation_span");
+let functionsSpan = document.querySelector("#functions_span");
+
+if (mediaSize.matches) {
+  animationSpan.textContent = "underneath here";
+  functionsSpan.textContent = "Underneath here";
+}

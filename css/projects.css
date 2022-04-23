@@ -102,6 +102,7 @@ nav > a:first-of-type {
   text-decoration: none;
   font-family: var(--font-displayfont);
   font-size: 1.1rem;
+  font-weight: 400;
 }
 #nav_links {
   display: flex;
@@ -211,7 +212,7 @@ button {
 #backtothetop {
   justify-self: end;
   margin-bottom: 0.5rem;
-  margin-right: 0.5rem;
+  margin-right: 48px;
   display: flex;
   flex-direction: column-reverse;
 }
@@ -229,7 +230,7 @@ button {
 #project_one {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  padding: 10rem 48px;
+  padding: 8rem 48px;
 }
 #project_one_graphics img {
   width: 100%;
@@ -303,7 +304,7 @@ button {
 #project_two {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  padding: 10rem 48px;
+  padding: 8rem 48px;
   background-color: var(--color-primary2);
 }
 #project_two_graphics img {
@@ -352,7 +353,7 @@ button {
 #project_three {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  padding: 10rem 48px;
+  padding: 8rem 48px;
 }
 #project_three_graphics img {
   width: 100%;

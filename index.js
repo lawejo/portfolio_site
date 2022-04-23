@@ -19,3 +19,14 @@ function slideOutMenu() {
   document.querySelector(".three").classList.toggle("lineThree");
   document.querySelector("main").classList.toggle("remove_display");
 }
+
+const href = location.href;
+const da = document.querySelector("#da");
+const en = document.querySelector("#en");
+console.log(href);
+
+en.classList.add("link_off");
+
+if (href === "https://www.latoso.dk/") {
+  console.log("en");
+}

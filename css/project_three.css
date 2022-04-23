@@ -384,11 +384,13 @@ footer {
     display: flex;
     flex-direction: column;
     padding: 4rem 24px;
+    scroll-margin: -3rem;
   }
   #part_two {
     display: flex;
     flex-direction: column;
     padding: 4rem 24px;
+    scroll-margin: -3rem;
   }
   #part_three {
     padding: 4rem 24px;

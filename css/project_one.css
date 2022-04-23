@@ -68,6 +68,10 @@ small,
 .text_small {
   font-size: 0.75rem;
 }
+a {
+  max-width: fit-content;
+}
+
 /* ----------------NAV--------------------------- */
 nav {
   display: grid;
@@ -196,6 +200,7 @@ main {
   color: var(--color-accent1);
   transition: 0.1s;
   cursor: pointer;
+  text-align: left;
 }
 #welcome a {
   color: var(--color-accent1);
@@ -215,6 +220,7 @@ main {
   display: flex;
   flex-direction: column;
 }
+
 /* -------------------part-one--------------------------------- */
 #part_one {
   display: grid;
@@ -407,15 +413,15 @@ footer {
   #part_one {
     display: flex;
     flex-direction: column;
-    padding: 8rem 48px;
+    padding: 4rem 24px;
   }
   #part_two {
     display: flex;
     flex-direction: column;
-    padding: 8rem 48px;
+    padding: 4rem 24px;
   }
   #part_three {
-    padding: 8rem 48px;
+    padding: 4rem 24px;
   }
   #details_part_one {
     display: flex;
@@ -438,12 +444,31 @@ footer {
     flex-direction: column;
     padding: 0;
   }
+  #welcome h2 {
+    max-width: 22ch;
+  }
   #welcome h2,
   #welcome article {
-    padding: 0 48px;
+    padding: 0 24px;
   }
   #hacked_hodwarts_codepen {
     padding: 0;
+  }
+  #hacked_hodwarts_codepen p {
+    padding: 0 24px;
+  }
+  #footer_content {
+    padding: 0 24px;
+  }
+  #svgs {
+    flex-direction: column;
+    margin: 0;
+  }
+  #part_three h4 {
+    grid-column: 1/10;
+  }
+  #hacked_hodwarts_codepen button {
+    font-size: 0.7rem;
   }
 }
 @media (max-width: 500px) {

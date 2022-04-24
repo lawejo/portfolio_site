@@ -193,8 +193,9 @@ main {
   grid-column: 1/3;
   margin-bottom: 0;
 }
-#welcome ul {
+#welcome article ul {
   margin-left: 1rem;
+  margin-top: 3rem;
   grid-column: 1/3;
 }
 #welcome button {
@@ -224,7 +225,9 @@ main {
   display: flex;
   flex-direction: column;
 }
-
+#hacked_hodwarts_codepen p:first-of-type {
+  margin-bottom: 2rem;
+}
 /* -------------------part-one--------------------------------- */
 #part_one {
   display: grid;

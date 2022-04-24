@@ -54,15 +54,13 @@
       <article>    <p>
         In this assignment I had to create an interface showing a list of students from which you can sort, filter as well as expel students, make them prefects or make them a part of an inquisitorial squad under certain conditions.  </p>
       <p>
-        It would be boring and take up too much time to make a full walkthrough of the full assignment, instead I've
-        decided to
-        highlight some keyfunctions I've created. Scroll through to check some of them out or jump to a specific
+        This assignment was large and complen enough that a full walkthrough would take too much time, instead I've highlighted some key points.  Scroll through to check them out or, jump to a specific
         function that might
-        catch your interest using the bookmarks underneath here or check out the full JavaScript <span id="welcome_span">to the right</span>.
+        catch your interest using the bookmarks underneath, or check out the full JavaScript <span id="welcome_span">to the right</span>.
         <ul>
           <li> -<a href="#part_one"> Cleaning up JSON file</a></li>
           <li> -<a href="#part_two"> Filtering a list of objects</a></li>
-          <li> -<a href="#part_three"> Comparing JSON data to determine a "bloodstatus"</a></li></ul>
+          <li> -<a href="#part_three"> Comparing JSON data to determine a "blood status"</a></li></ul>
       </p></article>
   
    
@@ -78,7 +76,7 @@
               Hacked Hogwarts assignment</a> by axtecho (<a href="https://codepen.io/axtecho">@axtecho</a>)
             on <a href="https://codepen.io">CodePen</a>.</span>
         </p>
-        <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>   <p> Link to the endresult
+        <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>   <p> Link to the end result
           <a href="https://latoso.dk/kea/3semester/project_hacked_hogwarts/" target="_blank">
             <button>https://latoso.dk/kea/3semester/project_hacked_hogwarts/</button></a></p>
             <p>Link to the Github repository<a href="https://github.com/axtecho/11C.04.04_Hacked_Hogwarts_Student_List" target="_blank">
@@ -90,7 +88,7 @@
       <article id="part_one_text">
 
         <p>
-          Before anything we had to clean up the data we were given. <span id="messy_data_span">On the right-top image</span> you can see what we received and underneath that, what I turned it into, to further work with it.
+          Before doing anything else we had to clean up the data we were given. <span id="messy_data_span">On the top-right image</span> you can see what we received and underneath that, what data I turned it into, to further work with it.
         </p>
       </article>
       <article id="part_one_graphic">
@@ -107,14 +105,14 @@
         </figure>
       </article>
       <article id="part_one_explanation">
-        <p>To get the clean data I created a function that I can loop all the students through and have the improved
+        <p>To get the clean data I created a function where I can loop through all the students and have the improved
           data returned.
         </p>
         <p>Said function can be viewed in the embedded codepen <span id="cleaning_span">on the right</span>. In it I use a lot of array methods to
           ensure that even if a name has a capitalized letter in the middle of the name it is still returned with only
           the first letter capitalized. </p>
         <p>It is from here that I create my new student object that I have created with all the relevant properties that
-          is needed for this assignment</p>
+          are needed for this assignment</p>
 
       </article>
       <article id="part_one_second_graphic">
@@ -130,9 +128,9 @@
     <section id="part_two">
       <h4>Filtering a list of objects</h4>
       <div id="part_two_text">
-        <p>This I did by utilizing the object I created while cleaning up the data. You can filter by a a students house
-          (Such as Gryffindor, Ravenclaw, Slythering or Hufflepuff) or if the students are expelled. Therefore one of
-          the filter functions looks as displayed here <span id="filtering_span">on the left</span>. If the object carries the value of "Ravenclaw" in this instance
+        <p>This I did by utilizing the object I created while cleaning up the data. You can filter by a student's house
+          (Such as Gryffindor, Ravenclaw, Slythering or Hufflepuff) or if the student's are expelled. Therefore one of
+          the filter functions looks as is displayed here <span id="filtering_span">on the left</span>. If the object carries the value of "Ravenclaw" in this instance,
           it is returned true and then the accumulated list is used to display, only showing the students from
           Ravenclaw.</p>
       </div>
@@ -152,23 +150,22 @@
       </div>
     </section>
     <section id="part_three">
-      <h4>Comparing JSON data containing family names to determine "bloodstatus"</h4>
+      <h4>Comparing JSON data containing family names to determine "blood status"</h4>
       <div id="part_three_text">
-        <p>A requirement of the assignment was to be able to determine a students "bloodstatus" and to solve this I had
+        <p>A requirement of the assignment was to be able to determine a students "blood status" and to solve this I had
           to deal with fetching two different JSON files. One of these I showed a snippet from at the top of the page that
-          delivered the students full name and house and then this second one that has two arrays dividing students in
-          to "Pure-blood" or "Half-blood" by their last name</p>
+          delivered the students full name and house, and then this second one that has two arrays dividing students in
+          to "Pure-blood" or "Half-blood" by their last name.</p>
       </div>
       <div id="part_three_graphics"><img src="../assets/families_half_blood.webp" alt="">
         <img src="../assets/families_fulll_blood.png" alt=""></div>
       <div id="part_three_second_text">
         <p>After fetching the second JSON file I created an object with two empty arrays inside called "half" & "pure"
-          and pushed the students into these arrays accordingly. <span id="blood_span">To the left</span> you can see how my function looks. Its a
+          and pushed the students into these arrays accordingly. <span id="blood_span">To the left</span> you can see how my function looks. It's a
           function with another function nested inside.</p>
-        <p>In my first if-statement there is three possible outcomes that can be returned as we can see "half", "full"
+        <p>In my first if-statement there are three possible outcomes that can be returned as "half", "full"
           or "muggle". What is returned is determined in the nested function that compares an array (which is part of
-          the second JSON file turned into an array) and then the last name of the given student. If the student is no
-          where to be found in either one they are returned as a muggle.</p>
+          the second JSON file turned into an array) and then the last name of the given student. If the student is nowhere to be found in either one they are returned as a muggle.</p>
       </div>
       <div id="part_three_second_graphic">
         <p class="codepen" data-height="300" data-default-tab="js" data-slug-hash="XWVOrPQ" data-user="axtecho"

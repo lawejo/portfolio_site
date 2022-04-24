@@ -1,0 +1,114 @@
+Velkommen
+Mit navn er Lasse og jeg er en multimedie design studerende som specialisere i front development.
+
+Min portfolie side er strukturet sådan at du kan se hvor meget jeg har flyttet mig som udvikler, 
+startende med en komplex 3. semester JavAscrip-baseret opgave og afsluttende med en 1. semester
+animations opgave. Naturligvis er in kode fra 1.semester ikke den mest velskrevne men jeg har
+besluttet mig at inkluderer den for at understrege hvor jeg startede og også for at vise potentielle
+arbejedsgivere mit potentiale for udvikling.
+
+Jeg har en baggrund som elektriker, som har hjulpet udvikle en solid logik såvel som et 
+øje for detaljer, hvilket har tjent mig godt siden jeg har sadlet om til webdeveloper verdenen.
+
+Jeg leder i øjeblikket efter en praktikplads, så hvis min profil virker interessant & stemmer overens
+med det de leder efter, så tag endelig kontakt.
+
+++++++++++++++++++++++++++++++++++
+
+PROJECTS
+
+Hacked Hogwarts Student List
+
+En komplex JavaScript baseret opgave
+I denne opgave skulle vi udvikle et interface der kunne vise en liste af studerende og i denne
+være i stand til at filtere, sortere såvel som udvise studerende, gøre dem til prefekter eller gøre dem 
+en del af et "inquisitorial squad" under visse betingelser.
+
+Se opgave
+
+
++++++++++++++++++++++
+
+Skab en online tilstedeværelse for en start-up
+Uvikle og kommuniker en start-ups profil ved at skabe en stærk, professionel online tilstedeværelse.
+
+I denne opgave arbejde min gruppe og jeg med en smykke start-up ved navn Ivaldesmykker - de 
+havde en eksisterende hjemmelavet WordPress side, en tom instagram konto og en facebok page 
+der kun lige var blevet oprettet. Der var ingen klar sammenhæng i den måde Ivaldesmykker udtrykte
+dem på online. Så vores opgave var at udvikle en Style & SoMe guide, video indhold til at promovere
+dem og deres indhold. Til sidst skulle vi udvikle en ny hjemmeside og det var i denne del af processen
+jeg arbejde mest.
+
+Se opgave
+
+
++++++++++++++++++++
+
+Animeret spil
+Skab et interactivt, animeret spil ved kun at bruge HTML, CSS & JavaScript
+
+I denne opgave skulle vi skabe et animeret spil, kun ved brug af de grundlæggende browser
+teknologier, såvel som at tegne de grafiske elementer på egen hånd og optage + manipulere lydende
+som vi ville bruge.
+
+Se opave
+
+
+++++++++++++++
+Hacked Hogwarts Student List
+
+I denne opgave skulle vi udvikle et interface der kunne vise en liste af studerende og i denne
+være i stand til at filtere, sortere såvel som udvise studerende, gøre dem til prefekter eller gøre dem 
+en del af et "inquisitorial squad" under visse betingelser.
+
+Denne opgave var så omfattende og komplex at en grundig gennemgang er for tidskrævende, så i stedet
+har jeg fokuseret på nogle kerne områder. Scroll ned og se dem eller spring til en specific funktion
+som måtte fange dit blik via. bogmærkerne underneden eller se den fulde JavaScript fil til højre her(underneath).
+
+
+Link til det endelige resultat
+
+Link til det relevante GitHub repository
+
+
+"At rydde op i rodet data"
+Før jeg kunne gøre andet skulle der ryddes op i den data vi modtog. Det første billede her til højre (Underneath here)
+kan du se hvad vi modtog og under det billede kan du se hvad hvordan det endte med at se ud, for at jeg kunne fortsætte
+med at arbejde på det.
+
+For at få dataen ryddet op konstruerede jeg en funktion hvori jeg kan loope igennem alle de studerende og 
+få den opryddedet data retuneret. 
+
+Pågældende fuktion kan ses i den indlejre funktion til højre for (underneath). I denne funktion har jeg benyttet
+mig af en del array methods for at sikre mig at selv hvis den modtog et navn med et blokbogstav i midten af navnet
+vil den stadig returnere navnet med kun det første bogstav som blokbogstav.
+
+Det er herfra at jeg skabte et nyt student objekt, som blev skabt på en måde så at jeg havde
+alle de nødvendige egenskaber som jeg skulle bruge i denne opgave.
+
+
+
+"At filtrere en list af objekter"
+
+Dette gjorde jeg ved at bruge det objekt som jeg skabte da jeg først ryddede i den modtagne data.
+Du kan filtrere på en studerende hus (Såsom Gryffindor, Ravenclaw, Slytherin eller Hufflepuff) eller på om de
+studerende er udviste. Derfor ser en de mine filter funktioner sådan ud, som de kan se til højre her (Underneath here).
+Hvis objektet har værdien "Ravenclaw" i dette tilfælde, vil det blive returneret som true og derefter vil der være en liste 
+af objekter som har denne værdi og så vil de bliv vist på listen.
+
+"At sammenligne JSON data som indeholder efternavne, for at fastlå "blod-status".
+
+Et krav i denne opgave var at man skulle kunne se hvad en studerendes "blod-status" er og for 
+at løse dette blev jeg nødt til at håndtere to JSON filer. En af disse så vi et screnshot af
+i toppen af siden, denne leverede en studerendes fulde navn og hus. JSON fil nummer to, have to arrays
+som delte de studerende ind i "ren-blod" og "halv-blod" vha. deres efternav.
+
+
+Efer at jeg fetchede JSON filen nummer to, skabte jeg et object med two tomme arrays indeni og døbte dem
+"half" og "pure" og pushede de studerende i i disse arrays. Til højre her kan de se hvordan den funktion ser ud.
+Det er en funktion med endnu en funktion nested indeni.
+
+I mit første If-statement er der tre mulige udfald, de kan blive retuneret som "half", "full" eller "muggle". Hvad der er 
+retuneret er afgjort i den nestede funktion som sammenligner et array (Som er en del af JSON fil nummer to gjort til et array) og 
+så efternavnet af en given studerende. Hvis den studerende ingen steder kan er at finde, så bliver de retuneret som muggle.
+

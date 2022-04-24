@@ -103,12 +103,34 @@ nav > a:first-of-type {
   font-family: var(--font-displayfont);
   font-size: 1.1rem;
   font-weight: 400;
+  max-width: fit-content;
+}
+
+.lan {
+  font-size: 1rem;
+  color: var(--color-offwhite);
+  list-style: none;
+  margin-left: 3rem;
+}
+.lan ul {
+  list-style-type: none;
+}
+.lan a {
+  text-decoration: none;
+  color: var(--color-accent1);
+}
+.lan .link_off {
+  color: rgba(255, 250, 255, 0.5);
 }
 #nav_links {
   display: flex;
-  justify-content: end;
 }
 
+#end_of_nav {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
 #nav_links ul {
   list-style-type: none;
   display: inline;
@@ -644,6 +666,14 @@ footer {
   }
   #proejct_text h5 {
     font-size: 1.5rem;
+  }
+  #end_of_nav {
+    flex-direction: row;
+    justify-content: end;
+  }
+  .lan {
+    margin-right: 1rem;
+    margin-left: 0;
   }
 }
 /* --------------------JS Class--------------------------- */

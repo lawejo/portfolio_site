@@ -101,9 +101,28 @@ nav > a:first-of-type {
 }
 #nav_links {
   display: flex;
-  justify-content: end;
 }
-
+#end_of_nav {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+.lan {
+  font-size: 1rem;
+  color: var(--color-offwhite);
+  list-style: none;
+  margin-left: 3rem;
+}
+.lan ul {
+  list-style-type: none;
+}
+.lan a {
+  text-decoration: none;
+  color: var(--color-accent1);
+}
+.lan .link_off {
+  color: rgba(255, 250, 255, 0.5);
+}
 #nav_links ul {
   list-style-type: none;
   display: inline;
@@ -446,6 +465,14 @@ footer {
   }
   button {
     text-align: left;
+  }
+  #end_of_nav {
+    flex-direction: row;
+    justify-content: end;
+  }
+  .lan {
+    margin-right: 1rem;
+    margin-left: 0;
   }
 }
 

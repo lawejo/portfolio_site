@@ -112,3 +112,66 @@ I mit første If-statement er der tre mulige udfald, de kan blive retuneret som 
 retuneret er afgjort i den nestede funktion som sammenligner et array (Som er en del af JSON fil nummer to gjort til et array) og 
 så efternavnet af en given studerende. Hvis den studerende ingen steder kan er at finde, så bliver de retuneret som muggle.
 
+
+
++++++++++++++++++++++++++++++++++++++++++++++
+
+Skab en online tilstedeværelse for en start-up
+
+I denne opgave arbejde min gruppe og jeg med en smykke start-up ved navn Ivaldesmykker - de 
+havde en eksisterende hjemmelavet WordPress side, en tom instagram konto og en facebok page 
+der kun lige var blevet oprettet. Der var ingen klar sammenhæng i den måde Ivaldesmykker udtrykte
+dem på online. Så vores opgave var at udvikle en Style & SoMe guide, video indhold til at promovere
+dem og deres indhold. Til sidst skulle vi udvikle en ny hjemmeside og det var i denne del af processen
+jeg arbejde mest.
+
+Grundet dette er koden fra hjemmesiden, det som jeg vil fokuserer mest på i min gennemgang af denne opgave. Hvis 
+du vil kan du se specifikke funktionaliter som jeg har fremhævet, kan du bruge bogmærkerne underneden her til at hoppe dertil.
+
+
+At kode mobile-first
+
+En af kravene fra opgaven var at den skulle være kodet efter et mobile-first-approach og dette indebærer at bruge media queries med en min-width, siden 
+disse er aktive når skærmen som minimum har en specifik bredde, modsat max-width media-queries. Til højre her kan de se en codepen med de media-queries der blev
+brugt i dette projekt.
+
+Nogle af fordelene ved at bruge et mobile-first-approach er at størstedelen af bruger som vil besøge din side, gør det fra en mobil af og du kan derfor argumenterer for
+at det giver mening at starte med din kode i den mobile skærm størrelse. En anden fordel er at siden er loaded med simplere kode og den avancerede kode vil blive tilføjet som
+behovet opstår gennem disse media-queries.
+
+"Dynamisk data, fetching fra en database"
+Det var i dette semester at vi blev introduceret til at fetche data og at skabe en hjemmeside som blev fyldt med dynamisk data. I den codepen til venstre kan de se koden jeg
+benyttede til at fetche JSON-data fra vores REST API og i slutningen er der et array af objekter der bliver sent til en funktion kaldet "handleData".
+
+I den code-pen der er til venstre har vi to funktioner der tager sig af den modtagne JSON data, som kommer i et array af objekter. Den første funktion er kaldet handleData og den tager sig
+at tage det modtagne array og køre det igennem den array-funktion der hedder .forEach og på den måde kan jeg loope igennem de enkelte objekter. Derefter bliver det finder sted er i funktionen
+singlePiece. I denne kopier jeg en template fra min DOM, med cloneNode(true), hvilket gør at den kopierer hele dets subtree. Derefter er min template fyldt ud med information taget fra det 
+pågældende object og til sidst bliver det vedhæftet til en tom parent node. 
+
+
+
+++++++++++++++++++++++++++++++++++++++++++++
+
+Animeret spil
+Skab et interactivt, animeret spil ved kun at bruge HTML, CSS & JavaScript
+
+I denne opgave skulle vi skabe et animeret spil, kun ved brug af de grundlæggende browser
+teknologier, såvel som at tegne de grafiske elementer på egen hånd og optage + manipulere lydende
+som vi ville bruge.
+
+Dette spil er noget som jeg skabte efter at have studerert multimedie-design i tre måneder. Jeg har inkluderet dette spil, ikke fordi der er velskrevet og komplex kode at fremhæve
+men for at sætte i perspektiv hvor langt jeg er kommet siden februar 2021 og for at understrege mit potentiale for udvikling. 
+
+"CSS animation"
+I dette tema blev vi introduceret til hvordan man kan lave CSS animationer med definerde keyframes. Vi brugte forskellige JavaScript addEventListeners, såsom ("click"), ("animationend")
+og ("animationiteration") for at kontrollerer hvad der skulle ske og hvornår.
+
+I den codepen de ser til højre er der et eksempel på en simpel animation lavet vha fire keyframes hvor at selve animation er igangsat af JavaScript. 
+
+
+
+
+"Funktioner & If-statements"
+Det var i dette semester at vi blev introduceret til simple funktioner & if-statements. Til venstre, kan du se hvor jeg startede med en funktion kaldet startTime, som når kaldet tjekker 
+om variablen timeLeft er større end 0, hvis den er, kalder den funktionen under kaldet showTime som trækker et sekund fra samlede tid der er tilbage, såvel som at den skifter 
+grafik i de to document.querySelector underneden, vha et skift i class name. Codepen til højre demonstrerer hvordan det virkede in-game.

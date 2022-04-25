@@ -98,9 +98,14 @@ function start() {
 
 /* ------------------------Mediaquery-------------------------------- */
 const mediaSize = window.matchMedia("(max-width: 784px)");
+const mediaSize2 = window.matchMedia("(max-width: 356px)");
 if (mediaSize.matches) {
   properties.duration = 850;
   properties2.duration = 850;
   properties3.duration = 850;
   start();
+}
+
+if (mediaSize2.matches) {
+  tilstedevaerelse.textContent = "tilstede-værelse";
 }

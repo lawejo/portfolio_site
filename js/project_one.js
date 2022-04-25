@@ -23,11 +23,13 @@ function slideOutMenu() {
 /* ----------------------Mediaquery------------------------- */
 
 const mediaSize = window.matchMedia("(max-width: 784px)");
+
 let welcomeSpan = document.querySelector("#welcome_span");
 let filteringSpan = document.querySelector("#filtering_span");
 let cleaningSpan = document.querySelector("#cleaning_span");
 let messyDataSpan = document.querySelector("#messy_data_span");
 let bloodSpan = document.querySelector("#blood_span");
+let tilstedevaerelse = document.querySelector("#tilstedevaerelse");
 
 if (mediaSize.matches) {
   console.log(welcomeSpan);

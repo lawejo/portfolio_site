@@ -15,31 +15,36 @@
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
-  <title>Projects</title>
+  <title>Projekter</title>
 </head>
 
 <body>
   <nav>
-     <a href="../index.html">LWJ</a>
-
-    <div id="nav_links">
-      <ul>
-        <li><a href="../index.html">WELCOME</a></li>
-        <li><a href="projects.html">PROJECTS</a></li>
-      </ul>
-      <svg viewBox="0 0 100 80" width="40" height="40">
-        <rect class="one"width="100" height="10"></rect>
-        <rect class="two"y="30" width="100" height="10"></rect>
-        <rect class="three" y="60" width="100" height="10"></rect>
-      </svg>
-      <div class="burgermenu">
-        <ul>
-          <li><a href="../index.html">WELCOME</a></li>
-          <li><a href="projects.html">PROJECTS</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+    <a href="index.html">LWJ</a>
+    <div id="end_of_nav">  <div class="lan">
+     <ul>          
+       <li><a id="da"  href="projects.html">DA</a>/<a id="en" class="link_off" href="../en/projects.html">EN</a></li>
+   </ul>
+ </div>
+   <div id="nav_links">
+     <ul>
+       <li><a href="index.html">WELCOME</a></li>
+       <li><a href="projects.html">PROJECTS</a></li>
+     </ul>
+     <svg viewBox="0 0 100 80" width="40" height="40">
+       <rect class="one"width="100" height="10"></rect>
+       <rect class="two"y="30" width="100" height="10"></rect>
+       <rect class="three" y="60" width="100" height="10"></rect>
+     </svg>
+  
+     <div class="burgermenu">
+       <ul>
+         <li><a href="index.html">WELCOME</a></li>
+         <li><a href="projects.html">PROJECTS</a></li>
+         </ul>
+     </div>
+   </div></div>
+ </nav>
   <main>
     <section id="project_one">
       <div id="project_one_content">
@@ -48,10 +53,12 @@
           <a href="project_one.html">
             <h3>Hacked Hogwarts Student List</h3>
           </a>
-          <h5>A complex Javascript based assignment</h5>
+          <h5>En komplex JavaScript baseret opgave</h5>
           <p class="project_one_desc">
-            In this assignment I had to create an interface showing a list of students from which you can sort, filter as well as expel students, make them prefects or make them a part of an inquisitorial squad under certain conditions.
-            <br /> <a href="project_one.html"><button>View case</button></a>
+            I denne opgave skulle vi udvikle et interface der kunne vise en liste af studerende og i denne
+være i stand til at filtere, sortere såvel som udvise studerende, gøre dem til prefekter eller gøre dem 
+en del af et "inquisitorial squad" under visse betingelser.
+            <br /> <a href="project_one.html"><button>Se opgave</button></a>
           </p>
           <div id="scroll_indicator"><svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
@@ -71,17 +78,22 @@
     <section id="project_two">
       <div id="project_two_content">
         <div id="project_text">
-          <p>2.Semester - KEA - Exam project</p>
+          <p>2.Semester - KEA - Eksamens projekt</p>
           <a href="project_two.html">
-            <h3>Creating an online presence for a start-up</h3>
+            <h3>
+              Skab en online <span id="tilstedevaerelse">tilstedeværelse</span>  for en start-up</h3>
           </a>
 
           <h5>
-            Develop and communicate a start-ups profile by creating a strong, professional online presence
-          </h5>
+            Uvikle og kommuniker en start-ups profil ved at skabe en stærk, professionel online tilstedeværelse.</h5>
           <p class="project_two_desc">
-            In this assignment my group and I worked with a jewellry start-up called Ivaldesmykker - they had an existing homemade wordpress site, an empty instagram account and a facebook page that had just been initiated. There was no clear coherency in the way Ivaldesmykker expressed themselves online. So our task was to develop a Style & SoMe guide, a video(s) to be used in a fashion that would help this particular start-up promote themselves or their products. Finally we had to develop a new website and this is the part I played a role in.<br/>
-            <a href="project_two.html"> <button>View case</button></a>
+            I denne opgave arbejde min gruppe og jeg med en smykke start-up ved navn Ivaldesmykker - de 
+havde en eksisterende hjemmelavet WordPress side, en tom instagram konto og en facebok page 
+der kun lige var blevet oprettet. Der var ingen klar sammenhæng i den måde Ivaldesmykker udtrykte
+dem på online. Så vores opgave var at udvikle en Style & SoMe guide og video indhold til at promovere
+dem & deres indhold. Til sidst skulle vi udvikle en ny hjemmeside og det var i denne del af processen
+jeg arbejde mest.<br/>
+            <a href="project_two.html"> <button>Se opgave</button></a>
 
           </p>
           <div id="scroll_indicator_p2"><svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
@@ -101,14 +113,16 @@
         <div id="project_text">
           <p>1.Semester - KEA</p>
           <a href="project_three.html">
-            <h3>Animated game</h3>
+            <h3>Animeret spil</h3>
           </a>
 
-          <h5>
-Create an interactive, animated game using only HTML, CSS & JavaScript          </h5>
+          <h5>Skab et interactivt, animeret spil ved kun at bruge HTML, CSS & JavaScript</h5>
           <p class="project_three_desc">
-            In this assignment we had to create and animated game, using the basics of browser technologies as well as draw all graphics by ourselves and record + manipulate the sounds used in the game.<br />
-            <a href="project_three.html"> <button>View case </button></a>
+            
+I denne opgave skulle vi skabe et animeret spil, kun ved brug af de grundlæggende browser
+teknologier, såvel som at tegne de grafiske elementer på egen hånd og optage + manipulere lydeeffekter
+som vi ville bruge.<br />
+            <a href="project_three.html"> <button>Se opgave </button></a>
 
           </p>
         </div>
@@ -122,7 +136,7 @@ Create an interactive, animated game using only HTML, CSS & JavaScript          
     </section>
 
  
-<div id="backtothetop"> <p>Get up top</p><a href="#nav_links"><svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+<div id="backtothetop"> <p>Tilbage til toppen</p><a href="#nav_links"><svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
   <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
 </svg> </a> </div>
     <footer>
@@ -155,8 +169,8 @@ Create an interactive, animated game using only HTML, CSS & JavaScript          
         </div>
         <div id="footer_links">
           <ul>
-            <li><a href="../index.html">WELCOME</a></li>
-            <li><a href="projects.html">PROJECTS</a></li>
+            <li><a href="../index.html">VELKOMMEN</a></li>
+            <li><a href="projects.html">PROJEKTER</a></li>
           </ul>
           <ul>
             <li>

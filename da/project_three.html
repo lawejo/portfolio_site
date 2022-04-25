@@ -15,50 +15,58 @@
     <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon_io/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-  <title>Animated game</title>
+  <title>Animeret spil</title>
 </head>
 
 <body>
   <nav>
-    <a href="../index.html">LWJ</a>
-
+    <a href="index.html">LWJ</a>
+    <div id="end_of_nav">  <div class="lan">
+      <ul>          
+        <li><a id="da"  href="project_three.html">DA</a>/<a id="en" class="link_off" href="../en/project_three.html">EN</a></li>
+    </ul>
+  </div>
     <div id="nav_links">
       <ul>
+        <li><a href="index.html">WELCOME</a></li>
         <li><a href="projects.html">PROJECTS</a></li>
-        <li><a href="../index.html">ABOUT</a></li>
       </ul>
       <svg viewBox="0 0 100 80" width="40" height="40">
         <rect class="one"width="100" height="10"></rect>
         <rect class="two"y="30" width="100" height="10"></rect>
         <rect class="three" y="60" width="100" height="10"></rect>
       </svg>
+   
       <div class="burgermenu">
         <ul>
+          <li><a href="index.html">WELCOME</a></li>
           <li><a href="projects.html">PROJECTS</a></li>
-          <li><a href="../index.html">ABOUT</a></li>
-        </ul>
+          </ul>
       </div>
-    </div>
+    </div></div>
   </nav>
   <main>
     <aside id="breadcrumbs">
       <ul>
-        <li> <a href="projects.html">PROJECTS</a> </li>
+        <li> <a href="projects.html">PROJEKTER</a> </li>
         <li>></li>
-        <li> <a href="project_three.html">Animated game</a> </li>
+        <li> <a href="project_three.html">Animeret spil</a> </li>
       </ul>
     </aside>
     <section id="welcome">
-      <h2>Animated game</h2>
+      <h2>Animeret spil</h2>
       <article>
         <p>
-          In this assignment we had to create and animated game, using the basics of browser technologies and also draw all graphics by ourselves and record and manipulate the sounds used in the game.
+          I denne opgave skulle vi skabe et animeret spil, kun ved brug af de grundlæggende browser
+          teknologier, såvel som at tegne de grafiske elementer på egen hånd og optage + manipulere lydende
+          som vi ville bruge.
         </p>
         <p>
-          This game is something I created after studying multimedia-design for only three months, I have included this game, not because there is great and complex code to highlight, but to put into perspective how far I've come since february 2021. And to underline my potential for growth.
+          Dette spil er noget som jeg skabte efter at have studerert multimedie-design i tre måneder. Jeg har inkluderet dette spil, ikke fordi der er velskrevet og komplex kode at fremhæve
+          men for at sætte i perspektiv hvor langt jeg er kommet siden februar 2021 og for at understrege mit potentiale for udvikling. 
           <ul>
             <li> -<a href="#part_one"> CSS animation</a></li>
-            <li> -<a href="#part_two"> Functions  & if-statements</a></li>
+            <li> -<a href="#part_two"> Funktioner & if-statements</a></li>
           </ul>
         </p>
       </article>
@@ -71,9 +79,9 @@
  
 
         <article id="ivaldesmykker_graphics_links">
-          <p> Link to the endresult <a href="https://latoso.dk/kea/1semester/animatedgame/" target="_blank">
+          <p> Link til det endelige resultat <a href="https://latoso.dk/kea/1semester/animatedgame/" target="_blank">
               <button>https://latoso.dk/kea/1semester/animatedgame/</button></a></p>
-          <p>Link to the Github repository<a href="#">
+          <p>Link til det relevant Github repository<a href="#">
               <button>Unfortunately this is before I was introduced to Github</button></a></p>
         </article>
 
@@ -84,9 +92,12 @@
       <article id="part_one_text">
 
         <p>
-          In this theme we were introduced how to make CSS-Animation run using defined keyframes. We used JavaScript addEventListeners, such as ("click"), ("animationend") and ("animationiteration") to control at what would happen and when.
+          I dette tema blev vi introduceret til hvordan man kan lave CSS animationer med definerde keyframes. Vi brugte forskellige JavaScript addEventListeners, såsom ("click"), ("animationend")
+          og ("animationiteration") for at kontrollerer hvad der skulle ske og hvornår.
+          
         </p>
-        <p>In the codepen <span id="animation_span">to the right</span> you can see a example of a simple animation made with one set of four keyframes and the animation is added through the JavaScript. </p>
+        <p>I den codepen <span id="animation_span">til højre</span> er der et eksempel på en simpel animation lavet vha fire keyframes hvor at selve animation er igangsat af JavaScript. 
+        </p>
       </article>
       <article id="part_one_graphic">
 
@@ -100,9 +111,12 @@
 
     </section>
     <section id="part_two">
-      <h4>Functions  & if-statements</h4>
+      <h4>Funktioner & if-statements</h4>
       <div id="part_two_text">
-        <p>This is the semester we were introduced simple functions & if-statements. <span id="functions_span">To the left</span> you can see where I started with a function called startTime that when called checks if the variable timeLeft is bigger than 0 and if so, then it calls the function underneath called showTime that reducts a second from the overall time thats left as well as it changes the graphics in the two docu.queryselectors underneath, via a change in classname.  The codepen demonstrates how it worked in the game. <br>This is where it began for me. </p>
+        <p>Det var i dette semester at vi blev introduceret til simple funktioner & if-statements. <span id="functions_span">Til venstre</span> kan du se hvor jeg startede med en funktion kaldet startTime, som når kaldet tjekker 
+          om variablen timeLeft er større end 0, hvis den er, kalder den funktionen under kaldet showTime som trækker et sekund fra samlede tid der er tilbage, såvel som at den skifter 
+          grafik i de to document.querySelector underneden, vha et skift i class name. Codepen til højre demonstrerer hvordan det virkede in-game.
+           </p>
       </div>
 
       <div id="part_two_graphics">
@@ -136,8 +150,8 @@
         </div>
         <div id="footer_links">
           <ul>
-            <li><a href="projects.html">PROJECTS</a></li>
-            <li><a href="../index.html">ABOUT</a></li>
+            <li><a href="index.html">VELKOMMEN</a></li>
+            <li><a href="projects.html">PROJEKTER</a></li>
           </ul>
           <ul>
             <li>

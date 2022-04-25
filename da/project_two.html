@@ -20,51 +20,59 @@
 
 <body>
   <nav>
-     <a href="../index.html">LWJ</a>
-
-    <div id="nav_links">
-      <ul>
-        <li><a href="../index.html">WELCOME</a></li>
-        <li><a href="projects.html#project_one">PROJECTS</a></li>
-      </ul>
-      <svg viewBox="0 0 100 80" width="40" height="40">
-        <rect class="one"width="100" height="10"></rect>
-        <rect class="two"y="30" width="100" height="10"></rect>
-        <rect class="three" y="60" width="100" height="10"></rect>
-      </svg>
-      <div class="burgermenu">
-        <ul>
-          <li><a href="../index.html">WELCOME</a></li>
-          <li><a href="projects.html">PROJECTS</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+    <a href="index.html">LWJ</a>
+    <div id="end_of_nav">  <div class="lan">
+     <ul>          
+       <li><a id="da" href="project_two.html">DA</a>/<a id="en" class="link_off" href="../en/project_two.html">EN</a></li>
+   </ul>
+ </div>
+   <div id="nav_links">
+     <ul>
+       <li><a href="index.html">WELCOME</a></li>
+       <li><a href="projects.html">PROJECTS</a></li>
+     </ul>
+     <svg viewBox="0 0 100 80" width="40" height="40">
+       <rect class="one"width="100" height="10"></rect>
+       <rect class="two"y="30" width="100" height="10"></rect>
+       <rect class="three" y="60" width="100" height="10"></rect>
+     </svg>
+  
+     <div class="burgermenu">
+       <ul>
+         <li><a href="index.html">WELCOME</a></li>
+         <li><a href="projects.html">PROJECTS</a></li>
+         </ul>
+     </div>
+   </div></div>
+ </nav>
   <main>
     <aside id="breadcrumbs">
       <ul>
-        <li> <a href="projects.html">PROJECTS</a> </li>
+        <li> <a href="projects.html">PROJEKTER</a> </li>
         <li>></li>
-        <li> <a href="project_two.html">Creating an online presence for a start-up</a> </li>
+        <li> <a href="project_two.html">
+          Skab en online tilstedeværelse for en start-up</a> </li>
       </ul>
     </aside>
     <section id="welcome">
-      <h2>Creating an online presence for a start-up</h2>
+      <h2>
+        Skab en online tilstedeværelse for en start-up</h2>
       <article>
         <p>
-          In this assignment my group and I worked with a jewellry start-up called Ivaldesmykker - they had an existing
-          homemade wordpress site, an empty instagram account and a facebook page that had just been initiated. There
-          was no clear coherency in the way Ivaldesmykker expressed themselves online. So our task was to develop a
-          Style & SoMe guide, a video(s) to be used in a fashion that would help this particular start-up promote
-          themselves or their products. Finally we had to develop a new website and this is the part I played a role in.
+          I denne opgave arbejde min gruppe og jeg med en smykke start-up ved navn Ivaldesmykker - de 
+          havde en eksisterende hjemmelavet WordPress side, en tom instagram konto og en facebok page 
+          der kun lige var blevet oprettet. Der var ingen klar sammenhæng i den måde Ivaldesmykker udtrykte
+          dem på online. Så vores opgave var at udvikle en Style & SoMe guide, video indhold til at promovere
+          dem og deres indhold. Til sidst skulle vi udvikle en ny hjemmeside og det var i denne del af processen
+          jeg arbejde mest.
+          
         </p>
         <p>
-          Due to me being the one coding the website in this assignment, that is the focus I will have when taking you
-          through this project. A bunch of code. If you want to check out specific fucntionalities that I've highlighted
-          underneath here, click on the links to jump to those parts.
+          Grundet dette er koden fra hjemmesiden, det som jeg vil fokuserer mest på i min gennemgang af denne opgave. Hvis 
+du vil kan du se specifikke funktionaliter som jeg har fremhævet, kan du bruge bogmærkerne underneden her til at hoppe dertil.
           <ul>
-            <li> -<a href="#part_one"> Coding mobile first</a></li>
-            <li> -<a href="#part_two"> Dynamic data, fetching from a database</a></li>
+            <li> -<a href="#part_one"> At kode mobile-first</a></li>
+            <li> -<a href="#part_two"> Dynamisk data, fetching fra en database</a></li>
             
           </ul>
         </p>
@@ -80,28 +88,28 @@
           <source src="../assets/Ivalde_website_desktop.mp4" type="video/mp4"></video>
 
         <article id="ivaldesmykker_graphics_links">
-          <p> Link to the endresult <a href="https://www.latoso.dk/kea/2semester/ivaldesmykker/" target="_blank">
+          <p> Link til det endelige resultat <a href="https://www.latoso.dk/kea/2semester/ivaldesmykker/" target="_blank">
               <button>https://www.latoso.dk/kea/2semester/ivaldesmykker/</button></a></p>
-          <p>Link to the Github repository<a href="https://github.com/axtecho/ivaldesmykker" target="_blank">
+          <p>Link til det relevant Github repository<a href="https://github.com/axtecho/ivaldesmykker" target="_blank">
               <button>https://github.com/axtecho/ivaldesmykker</button></a></p>
         </article>
 
       </div>
     </section>
     <section id="part_one">
-      <h3>Coding mobile first</h3>
+      <h3>At kode mobile-first</h3>
       <article id="part_one_text">
 
         <p>
-          One of the requirements of this assignment was to code the website with the mobile-first approach and this
-          entails using media queries with a min-width, since they are active with a screen of that has a certain
-          minimum width, opposite of the max-width media-queries. <span id="mobile_first_span">On the right</span> is a codepen of the media-queries used in
-          this project.
+          
+En af kravene fra opgaven var at den skulle være kodet efter et mobile-first-approach og dette indebærer at bruge media queries med en min-width, siden 
+disse er aktive når skærmen som minimum har en specifik bredde, modsat max-width media-queries. <span id="mobile_first_span">Til højre</span> kan de se en codepen med de media-queries der blev
+brugt i dette projekt.
         </p>
-        <p>Some of the advantages of the mobile-first approach is that a majority of users will visit your site on their
-          phone and therefore you can argue that it makes sense to start your design and code there. Another advantage
-          is that the page is loaded with much simpler code and the advanced styling will be added when needed through
-          the media-queries. </p>
+        <p>Nogle af fordelene ved at bruge et mobile-first-approach er at størstedelen af bruger som vil besøge din side, gør det fra en mobil af og du kan derfor argumenterer for
+          at det giver mening at starte med din kode i den mobile skærm størrelse. En anden fordel er at siden er loaded med simplere kode og den avancerede kode vil blive tilføjet som
+          behovet opstår gennem disse media-queries.
+           </p>
       </article>
       <article id="part_one_graphic">
 
@@ -116,11 +124,10 @@
 
     </section>
     <section id="part_two">
-      <h4>Dynamic data, fetching from a database</h4>
+      <h4>Dynamisk data, fetching fra en database</h4>
       <div id="part_two_text">
-        <p>This is the semester we were introduced to fetching data and creating a website that is populated with
-          dynamic data. In the codepen <span id="dynamic_span">on the right</span> is an example of the code I used to fetch JSON-data from our RESTAPI
-          and in the end an array of objects is sent to the function "handelData". </p>
+        <p>Det var i dette semester at vi blev introduceret til at fetche data og at skabe en hjemmeside som blev fyldt med dynamisk data. I den codepen <span id="dynamic_span">til højre</span> kan de se koden jeg
+          benyttede til at fetche JSON-data fra vores REST API og i slutningen er der et array af objekter der bliver sent til en funktion kaldet "handleData".</p>
       </div>
 
       <div id="part_two_graphics">
@@ -135,12 +142,10 @@
         </figure>
       </div>
       <div id="part_two_second_text">
-        <p>In the codepen <span id="fetch_span">on the left</span> we have the two functions that take care of the received JSOn data, that comes in
-          an array of objects. The first one called handleData serves to take array and then with the array method
-          .forEach I loop through each object and what happens to each on is what we see in the function called
-          singlePiece. In in I copy a template from my DOM, I copy it with the cloneNode(true) which also copies its
-          whole subtree. Then the template is populated with information derived from the object and in the end its
-          appended to an empty parentnode. </p>
+        <p>I den code-pen der <span id="fetch_span">til venstre</span> har vi to funktioner der tager sig af den modtagne JSON data, som kommer i et array af objekter. Den første funktion er kaldet handleData og den tager sig
+          at tage det modtagne array og køre det igennem den array-funktion der hedder .forEach og på den måde kan jeg loope igennem de enkelte objekter. Derefter bliver det finder sted er i funktionen
+          singlePiece. I denne kopier jeg en template fra min DOM, med cloneNode(true), hvilket gør at den kopierer hele dets subtree. Derefter er min template fyldt ud med information taget fra det 
+          pågældende object og til sidst bliver det vedhæftet til en tom parent node.  </p>
       </div>
       <div id="part_two_second_graphics">
         <p class="codepen" data-height="300" data-default-tab="js" data-slug-hash="GRyzwwd" data-user="axtecho"
@@ -171,8 +176,8 @@
         </div>
         <div id="footer_links">
           <ul>
-            <li><a href="../index.html">WELCOME</a></li>
-            <li><a href="projects.html#project_one">PROJECTS</a></li>
+            <li><a href="../index.html">VELKOMMEN</a></li>
+            <li><a href="projects.html#project_one">PROJEKTER</a></li>
           </ul>
           <ul>
             <li>

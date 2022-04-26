@@ -124,6 +124,7 @@ nav > a:first-of-type {
 }
 #nav_links {
   display: flex;
+  scroll-margin: 3rem;
 }
 
 #end_of_nav {

@@ -20,13 +20,14 @@ function slideOutMenu() {
   document.querySelector("main").classList.toggle("remove_display");
 }
 
-/* const href = location.href;
-const da = document.querySelector("#da");
-const en = document.querySelector("#en");
-console.log(href);
-
-da.classList.add("link_off");
-
-if (href === "https://www.latoso.dk/") {
-  console.log("en");
-} */
+const useDark = window.matchMedia("(prefers-color-scheme: dark)");
+toggleDarkMode(useDark.matches);
+function toggleDarkMode(state) {
+  console.log("hallo");
+  console.log(state);
+  document.querySelector("#fav_16").href =
+    "../assets/favicon_io/darkmode_favicon-16x16.png";
+  document.querySelector("#fav_32").href =
+    "../assets/favicon_io/darkmode_favicon-32x32.png";
+  document.documentElement.classList.toggle("dark-mode", state);
+}

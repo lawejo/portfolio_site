@@ -12,8 +12,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@200;300;400;500;600;700&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet"> 
 <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon_io/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon_io/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon_io/favicon-16x16.png">
+<link id="fav_32" rel="icon" type="image/png" sizes="32x32" href="../assets/favicon_io/darkmode_favicon-32x32.png">
+<link id="fav_16" rel="icon" type="image/png" sizes="16x16" href="../assets/favicon_io/darkmode_favicon-16x16.png">
 <link rel="manifest" href="../assets/favicon_io/site.webmanifest">
   <title>Hacked Hogwarts Student List</title>
 </head>
@@ -65,7 +65,7 @@
       <p>
         Denne opgave var så omfattende og komplex at en grundig gennemgang er for tidskrævende, så i stedet
 har jeg fokuseret på nogle kerne områder. Scroll ned og se dem eller spring til en specific funktion
-som måtte fange dit blik via. bogmærkerne underneden eller se den fulde JavaScript fil til <span id="welcome_span">højre her</span>.
+som måtte fange dit blik via. bogmærkerne underneden eller se den fulde JavaScript fil <span id="welcome_span">højre her</span>.
         <ul>
           <li> -<a href="#part_one"> At rydde op i rodet data</a></li>
           <li> -<a href="#part_two"> At filtrere en list af objekter</a></li>
@@ -98,7 +98,7 @@ som måtte fange dit blik via. bogmærkerne underneden eller se den fulde JavaSc
       <article id="part_one_text">
 
         <p>
-          Før jeg kunne gøre andet skulle der ryddes op i den data vi modtog. Det første billede her til <span id="messy_data_span">højre</span>
+          Før jeg kunne gøre andet skulle der ryddes op i den data vi modtog.<span id="messy_data_span">højre</span>
 kan du se hvad vi modtog og under det billede kan du se hvad hvordan det endte med at se ud, for at jeg kunne fortsætte
 med at arbejde på det.
      
@@ -119,7 +119,7 @@ med at arbejde på det.
       </article>
       <article id="part_one_explanation">
         <p>For at få dataen ryddet op konstruerede jeg en funktion hvori jeg kan loope igennem alle de studerende og 
-          få den opryddedet data retuneret. 
+          få den "rene" data retuneret. 
           
         </p>
         <p>Pågældende fuktion kan ses i den indlejre funktion <span id="cleaning_span">til højre for</span>. I denne funktion har jeg benyttet
@@ -147,7 +147,7 @@ med at arbejde på det.
         <p>
           Dette gjorde jeg ved at bruge det objekt som jeg skabte da jeg først ryddede i den modtagne data.
           Du kan filtrere på en studerende hus (Såsom Gryffindor, Ravenclaw, Slytherin eller Hufflepuff) eller på om de
-          studerende er udviste. Derfor ser en de mine filter funktioner sådan ud, som de kan se <span id="filtering_span">til venstre</span>. Hvis objektet har værdien "Ravenclaw" i dette tilfælde, vil det blive returneret som true og derefter vil der være en liste 
+          studerende er udviste. Derfor ser en de mine filter funktioner sådan ud, som du kan se <span id="filtering_span">til venstre</span>. Hvis objektet har værdien "Ravenclaw" i dette tilfælde, vil det blive returneret som true og derefter vil der være en liste 
           af objekter som har denne værdi og så vil de bliv vist på listen.</p>
       </div>
 
@@ -171,13 +171,13 @@ med at arbejde på det.
         <p>Et krav i denne opgave var at man skulle kunne se hvad en studerendes "blod-status" er og for 
           at løse dette blev jeg nødt til at håndtere to JSON filer. En af disse så vi et screnshot af
           i toppen af siden, denne leverede en studerendes fulde navn og hus. JSON fil nummer to, have to arrays
-          som delte de studerende ind i "ren-blod" og "halv-blod" vha. deres efternav.</p>
+          som delte de studerende ind i "ren-blod" og "halv-blod" vha. deres efternavn.</p>
       </div>
       <div id="part_three_graphics"><img src="../assets/families_half_blood.webp" alt="">
         <img src="../assets/families_fulll_blood.png" alt=""></div>
       <div id="part_three_second_text">
         <p>Efter at jeg fetchede JSON filen nummer to, skabte jeg et object med two tomme arrays indeni og døbte dem
-          "half" og "pure" og pushede de studerende i i disse arrays. Til højre her kan de se hvordan den funktion ser ud. <span id="blood_span">Til venstre</span> kan de se hvordan den funktion ser ud.
+          "half" og "pure" og pushede de studerende i i disse arrays.  <span id="blood_span">Til venstre</span> kan du se hvordan den funktion ser ud.
           Det er en funktion med endnu en funktion nested indeni</p>
         <p>I mit første If-statement er der tre mulige udfald, de kan blive retuneret som "half", "full" eller "muggle". Hvad der er 
           retuneret er afgjort i den nestede funktion som sammenligner et array (Som er en del af JSON fil nummer to gjort til et array) og 

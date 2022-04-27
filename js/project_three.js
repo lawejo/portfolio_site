@@ -21,15 +21,21 @@ function slideOutMenu() {
 }
 
 const mediaSize = window.matchMedia("(max-width: 784px)");
+let url = location.href;
 let animationSpan = document.querySelector("#animation_span");
 let functionsSpan = document.querySelector("#functions_span");
 
 if (mediaSize.matches) {
-  animationSpan.textContent = "underneath here";
-  functionsSpan.textContent = "Underneath here";
+  if (url.includes("en")) {
+    animationSpan.textContent = "underneath here";
+    functionsSpan.textContent = "Underneath here";
+  } else if (url.includes("da")) {
+    animationSpan.textContent = "underneden her";
+    functionsSpan.textContent = "Underneden her";
+  }
 }
 const useDark = window.matchMedia("(prefers-color-scheme: dark)");
-toggleDarkMode(useDark.matches);
+toggleDarkMode(!useDark.matches);
 function toggleDarkMode(state) {
   console.log("hallo");
   console.log(state);

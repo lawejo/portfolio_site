@@ -68,7 +68,13 @@ small,
 .text_small {
   font-size: 0.75rem;
 }
-
+#aboutme_text a {
+  color: var(--color-accent1);
+  text-decoration: none;
+}
+#aboutme_text a:visited {
+  text-decoration: none;
+}
 /* ----------------NAV--------------------------- */
 nav {
   display: grid;

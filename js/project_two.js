@@ -21,14 +21,26 @@ function slideOutMenu() {
 }
 
 const mediaSize = window.matchMedia("(max-width: 784px)");
+const mediaSize2 = window.matchMedia("(max-width: 324px)");
+let url = location.href;
 let mobileFirstSpan = document.querySelector("#mobile_first_span");
 let dynamicSpan = document.querySelector("#dynamic_span");
 let fetchSpan = document.querySelector("#fetch_span");
-
+let h2 = document.querySelector("#h2_langt_ord");
 if (mediaSize.matches) {
-  mobileFirstSpan.textContent = "Underneath here";
-  dynamicSpan.textContent = "underneath here";
-  fetchSpan.textContent = "underneath here";
+  if (url.includes("en")) {
+    mobileFirstSpan.textContent = "Underneath here";
+    dynamicSpan.textContent = "underneath here";
+    fetchSpan.textContent = "underneath here";
+  } else if (url.includes("da")) {
+    mobileFirstSpan.textContent = "Underneden her";
+    dynamicSpan.textContent = "underneden her";
+    fetchSpan.textContent = "underneden her";
+  }
+}
+
+if (mediaSize2.matches) {
+  h2.textContent = "tilstede- værelse";
 }
 const useDark = window.matchMedia("(prefers-color-scheme: dark)");
 toggleDarkMode(useDark.matches);

@@ -43,13 +43,10 @@ if (mediaSize2.matches) {
   h2.textContent = "tilstede- værelse";
 }
 const useDark = window.matchMedia("(prefers-color-scheme: dark)");
-toggleDarkMode(useDark.matches);
-function toggleDarkMode(state) {
-  console.log("hallo");
-  console.log(state);
+if (useDark.matches === false) {
   document.querySelector("#fav_16").href =
     "../assets/favicon_io/darkmode_favicon-16x16.png";
   document.querySelector("#fav_32").href =
     "../assets/favicon_io/darkmode_favicon-32x32.png";
-  document.documentElement.classList.toggle("dark-mode", state);
+  console.log("we using dark favicon");
 }

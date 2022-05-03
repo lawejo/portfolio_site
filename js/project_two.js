@@ -33,9 +33,9 @@ if (mediaSize.matches) {
     dynamicSpan.textContent = "underneath here";
     fetchSpan.textContent = "underneath here";
   } else if (url.includes("da")) {
-    mobileFirstSpan.textContent = "Underneden her";
-    dynamicSpan.textContent = "underneden her";
-    fetchSpan.textContent = "underneden her";
+    mobileFirstSpan.textContent = "Forneden her";
+    dynamicSpan.textContent = "forneden her";
+    fetchSpan.textContent = "forneden her";
   }
 }
 

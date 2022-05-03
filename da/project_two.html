@@ -59,17 +59,17 @@
         Skab en online <span id="h2_langt_ord">tilstedeværelse</span> for en start-up</h2>
       <article>
         <p>
-          I denne opgave arbejde min gruppe og jeg med en smykke start-up ved navn Ivaldesmykker - de 
-          havde en eksisterende hjemmelavet WordPress side, en tom instagram konto og en facebok page 
+          I denne opgave arbejde min gruppe og jeg med en smykke start-up ved navn Ivaldesmykker - De 
+          havde en eksisterende hjemmelavet WordPress side, en tom instagram konto og en facebook page 
           der kun lige var blevet oprettet. Der var ingen klar sammenhæng i den måde Ivaldesmykker udtrykte
-          dem på online. Så vores opgave var at udvikle en Style & SoMe guide, video indhold til at promovere
+          sig på online. Så vores opgave var at udvikle en Style & SoMe guide, video indhold til at promovere
           dem og deres indhold. Til sidst skulle vi udvikle en ny hjemmeside og det var i denne del af processen
-          jeg arbejde mest.
+          jeg arbejdede mest.
           
         </p>
         <p>
-          Grundet dette er koden fra hjemmesiden, det som jeg vil fokuserer mest på i min gennemgang af denne opgave. Hvis 
-du vil kan du se specifikke funktionaliter som jeg har fremhævet, kan du bruge bogmærkerne underneden her til at hoppe dertil.
+          Grundet dette jeg her mest fokusere på hjemmesidens kode. Hvis 
+du vil kan du se specifikke funktionaliter som jeg har fremhævet, kan du bruge bogmærkerne forneden her til at hoppe dertil.
           <ul>
             <li> -<a href="#part_one"> At kode mobile-first</a></li>
             <li> -<a href="#part_two"> Dynamisk data, fetching fra en database</a></li>
@@ -102,13 +102,12 @@ du vil kan du se specifikke funktionaliter som jeg har fremhævet, kan du bruge 
 
         <p>
           
-En af kravene fra opgaven var at den skulle være kodet efter et mobile-first-approach og dette indebærer at bruge media queries med en min-width, siden 
+En af kravene fra opgaven var at den skulle være kodet efter et mobile-first-approach. Dette indebærer at bruge media queries med en min-width, siden 
 disse er aktive når skærmen som minimum har en specifik bredde, modsat max-width media-queries. <span id="mobile_first_span">Til højre</span> kan de se en codepen med de media-queries der blev
 brugt i dette projekt.
         </p>
-        <p>Nogle af fordelene ved at bruge et mobile-first-approach er at størstedelen af bruger som vil besøge din side, gør det fra en mobil af og du kan derfor argumenterer for
-          at det giver mening at starte med din kode i den mobile skærm størrelse. En anden fordel er at siden er loaded med simplere kode og den avancerede kode vil blive tilføjet som
-          behovet opstår gennem disse media-queries.
+        <p>En af fordelene ved at bruge et mobile-first-approach er at størstedelen af brugere som vil besøge din side, gør det fra en mobil af. Du kan derfor argumentere for
+          at det giver mening at starte med din kode i den mobile skærm størrelse. En anden fordel er at siden er loaded med mere simpel kode og den avancerede kode vil blive tilføjet i takt med at behovet opstår, gennem disse media-queries.
            </p>
       </article>
       <article id="part_one_graphic">
@@ -126,7 +125,7 @@ brugt i dette projekt.
     <section id="part_two">
       <h4>Dynamisk data, fetching fra en database</h4>
       <div id="part_two_text">
-        <p>Det var i dette semester at vi blev introduceret til at fetche data og at skabe en hjemmeside som blev fyldt med dynamisk data. I den codepen <span id="dynamic_span">til højre</span> kan de se koden jeg
+        <p>Det var i dette semester at vi blev introduceret til at fetche data og at skabe en hjemmeside som bliver fyldt med dynamisk data. I codepenen <span id="dynamic_span">til højre</span> kan du se koden jeg
           benyttede til at fetche JSON-data fra vores REST API og i slutningen er der et array af objekter der bliver sent til en funktion kaldet "handleData".</p>
       </div>
 
@@ -142,9 +141,8 @@ brugt i dette projekt.
         </figure>
       </div>
       <div id="part_two_second_text">
-        <p>I den code-pen der <span id="fetch_span">til venstre</span> har vi to funktioner der tager sig af den modtagne JSON data, som kommer i et array af objekter. Den første funktion er kaldet handleData og den tager sig
-          at tage det modtagne array og køre det igennem den array-funktion der hedder .forEach og på den måde kan jeg loope igennem de enkelte objekter. Derefter bliver det finder sted er i funktionen
-          singlePiece. I denne kopier jeg en template fra min DOM, med cloneNode(true), hvilket gør at den kopierer hele dets subtree. Derefter er min template fyldt ud med information taget fra det 
+        <p>I  code-pennen<span id="fetch_span">til venstre</span> har vi to funktioner der tager sig af den modtagne JSON data, som kommer i et array af objekter. Den første funktion er kaldet handleData og den tager sig af tage det modtagne array og køre det igennem den array-funktion der hedder .forEach. På den måde kan jeg loope igennem de enkelte objekter. Derefter bliver hvert enkelt objekt sendt til funktionen
+          singlePiece. I denne kopier jeg en template fra min DOM, med cloneNode(true), hvilket gør at den kopierer hele dens subtree. Derefter er min template fyldt ud med information taget fra det 
           pågældende object og til sidst bliver det vedhæftet til en tom parent node.  </p>
       </div>
       <div id="part_two_second_graphics">

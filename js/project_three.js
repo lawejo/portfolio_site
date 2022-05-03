@@ -30,8 +30,8 @@ if (mediaSize.matches) {
     animationSpan.textContent = "underneath here";
     functionsSpan.textContent = "Underneath here";
   } else if (url.includes("da")) {
-    animationSpan.textContent = "underneden her";
-    functionsSpan.textContent = "Underneden her";
+    animationSpan.textContent = "forneden her";
+    functionsSpan.textContent = "forneden her";
   }
 }
 const useDark = window.matchMedia("(prefers-color-scheme: dark)");
